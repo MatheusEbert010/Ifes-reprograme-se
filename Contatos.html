@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <meta lang="pt-br">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <title>Atividade | Semana 02</title>
+</head>
+
+<body>
+  <header>
+    <section class="corpo">
+
+      <div class="conteudo">
+
+        <div class="imagem">
+          <img class="Foto" src="./img/FotoPerfilMenor.png" alt="Foto de Perfil">
+        </div>
+
+
+        <div class="texto">
+          <h1>Matheus De Souza Ebert</h1>
+          <p class="pHeader">Desenvolvedor Web</p>
+        </div>
+
+      </div>
+
+    </section>
+  </header>
+
+  <ul>
+    <li>
+      <a href="Principal.html">Principal</a>
+      <a href="Quemsou.html">Quem sou</a>
+      <a href="Projetos.html">Projetos</a>
+      <a href="Contatos.html" class="active">Contato</a>
+    </li>
+  </ul>
+
+  <div class="areadecontato">
+    <h2 class="textH2">
+      Entre em Contato!
+    </h2>
+    <p class="textP">
+      Preencha todos os campos do formulário a seguir e em até 24h lhe responderei.
+      <br>
+      Será um prazer lhe atender!
+    </p>
+    <form class="formulário" method="post">
+      <section>
+        <label for="slcAssunto">Assunto</label>
+        <br>
+        <select class="pform" id="slcAssunto" required>
+          <option>Selecione o assunto</option>
+          <option>Contrato CLT</option>
+          <option>Contrato PJ</option>
+          <option>Projeto FreeLancer</option>
+          <option>Bater um Papo em um café</option>
+          <option>Outro assunto</option>
+        </select>
+        <p>
+          <label for="txtName">Nome</label><br>
+          <input class="pform" type="text" name="nome" id="txtName" placeholder="Digite seu nome">
+        </p>
+        <p>
+          <label for="txtE-mail">E-mail</label><br>
+          <input class="pform" type="email" placeholder="seuemail@gmail.com" name="E-mail" id="txtE-mail" required>
+        </p>
+        <p>
+          <label for="numberTelefone">Telefone</label><br>
+          <input class="pform" type="tel" placeholder="(xx) 9xxxx-xxxx" maxlength="15" pattern="\([0-9]{2}\) [9]{1}[0-9]{4}-[0-9]{4}" name="Telefone" id="numberTelefone" required>
+        </p>
+        <p>
+          <label for="txtMensagem">Mensagem</label><br>
+          <textarea class="pform" rows="10" cols="30" name="Mensagem" id="txtMensagem"
+          placeholder="Deixe sua mensagem"></textarea>
+        </p>
+        
+        <input class="botaoenviar" type="submit" value="Enviar">
+      </section>
+    </form>
+    <hr>
+    <h2>Outras formas de contato:</h2>
+    <p class="textoP"><img src="./img/home-img.png" alt="casa"> Residente em Vila Valério/ES</p>
+    <a id="pagcontato" href="mailto:ebertmatheus60@gmail.com"><img src="./img/email-img.png" width="16" alt="envelope-email-img"> ebertmatheus60@gmail.com</a>
+    <a id="pagcontato" href="tel:+5527995259740"><img src="./img/phone-img.png" width="16" alt="celular-img"> (27) 995249740</a>
+    <a id="pagcontato" href="https://www.linkedin.com/in/matheus-de-souza-ebert/"><img src="./img/linkedin-img.png" width="16" alt="linkedin-logo"> LinkedIn</a>
+    <a id="pagcontato" ref="https://github.com/MatheusEbert010"><img src="./img/github-img.png" width="16" alt="github-logo"> GitHub</a>
+  </div>
+</body>
+
+<footer>
+  <p>
+    Copyright ₢ 2022
+  </p>
+  <img src="./img/ifes.png" width="80px">
+</footer>
+
+</html>
